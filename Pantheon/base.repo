@@ -31,3 +31,25 @@ repo_gpgcheck=0
 gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-36-$basearch
 skip_if_unavailable=True
+
+[elementary-staging]
+name=Copr for elementary-staging, Provided by decathorpe
+baseurl=https://download.copr.fedorainfracloud.org/results/decathorpe/elementary-staging/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/decathorpe/elementary-staging/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+  
+[elementary-nightly]
+name=Copr for elementary-nightly, Provided by decathorpe
+baseurl=https://download.copr.fedorainfracloud.org/results/decathorpe/elementary-nightly/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/decathorpe/elementary-nightly/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
